@@ -7,11 +7,15 @@ collapse_vector_to_list <- function(vector) {
   return(paste0("[", paste0("'", vector, "'", collapse = ", "), "]"))
 }
 
-# Initial table
+# initial table
 catalog_table <- read.csv("./inst/extdata/surface_catalog_table.csv")
 
-# 3DEP data
-conus_dem_list <- list(
+# -------------------------------------------------------------------------------------------------
+# ----- Add additional list elements to DATA_SOURCES_LIST to add entries to the catalog -----
+# - 3DEP 10m DEM
+# - 3DEP 30m DEM
+# -------------------------------------------------------------------------------------------------
+DATA_SOURCES_LIST <- list(
   list(
     domain = "conus",
     region = "conus",
@@ -42,9 +46,9 @@ conus_dem_list <- list(
   )
 )
 
-# Add 3DEP rows to rest of catalog
-conus_dem     <- do.call(rbind, lapply(conus_dem_list, as.data.frame))
-catalog_table <- rbind(catalog_table, conus_dem)
+# Add DATA_SOURCES_LIST rows to rest of catalog
+DATA_SOURCES <- do.call(rbind, lapply(DATA_SOURCES_LIST, as.data.frame))
+catalog_table <- rbind(catalog_table, DATA_SOURCES)
 
 usethis::use_data(catalog_table, overwrite = TRUE)
 
