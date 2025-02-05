@@ -1,0 +1,16 @@
+Package: elevationSources
+Title: Surface Elevation Sources Data R Package 
+Version: 0.0.0.9000
+Authors@R: c(person("Angus", "Watters",  role = c("aut", "cre"), email = "anguswatters@gmail.com"),
+             person("Liliana", "Hernandez Gonzalez",  role = "ctb"),
+             person("NOAA", role = "fnd"),
+             person("Lynker", role = "fnd")
+             )
+Description: Builds surface elevation data catalog.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: 
+    R (>= 2.10)
+LazyData: true
