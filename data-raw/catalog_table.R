@@ -1,11 +1,7 @@
-## code to prepare `catalog_table` dataset goes here
-collapse_vector_to_list <- function(vector) {
-  if(is.null(vector)) {
-    return("[]")
-  }
+library(jsonlite)
+library(usethis)
 
-  return(paste0("[", paste0("'", vector, "'", collapse = ", "), "]"))
-}
+## code to prepare `catalog_table` dataset goes here
 
 # initial table
 catalog_table <- read.csv("./inst/extdata/surface_catalog_table.csv")
@@ -21,28 +17,28 @@ DATA_SOURCES_LIST <- list(
     region = "conus",
     source = "3DEP",
     resolution = "10m",
-    has_topo = TRUE,
-    has_bathymetry = FALSE,
+    has_topo = "True",
+    has_bathymetry = "False",
     horizontal_crs = "NAD83",
-    vertical_datum = NA,
-    vertical_datum_conversion = NA,
+    vertical_datum = "",
+    vertical_datum_conversion = "",
     priority = 0,
     source_url = "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/USGS_Seamless_DEM_13.vrt",
-    asset_urls = collapse_vector_to_list(c("https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/USGS_Seamless_DEM_13.vrt"))
+    asset_urls = jsonlite::toJSON(c("https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/13/TIFF/USGS_Seamless_DEM_13.vrt"))
   ),
   list(
     domain = "conus",
     region = "conus",
     source = "3DEP",
     resolution = "30m",
-    has_topo = TRUE,
-    has_bathymetry = FALSE,
+    has_topo = "True",
+    has_bathymetry = "False",
     horizontal_crs = "NAD83",
-    vertical_datum = NA,
-    vertical_datum_conversion = NA,
+    vertical_datum = "",
+    vertical_datum_conversion = "",
     priority = 0,
     source_url = "https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/USGS_Seamless_DEM_1.vrt",
-    asset_urls = collapse_vector_to_list(c("https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/USGS_Seamless_DEM_1.vrt"))
+    asset_urls = jsonlite::toJSON(c("https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/1/TIFF/USGS_Seamless_DEM_1.vrt"))
   )
 )
 
