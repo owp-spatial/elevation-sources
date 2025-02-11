@@ -10,6 +10,9 @@ catalog_table <- read.csv("./inst/extdata/surface_catalog_table.csv")
 # ----- Add additional list elements to DATA_SOURCES_LIST to add entries to the catalog -----
 # - 3DEP 10m DEM
 # - 3DEP 30m DEM
+# - ehydro
+# - nos surveys
+# - topobathy
 # -------------------------------------------------------------------------------------------------
 DATA_SOURCES_LIST <- list(
   list(
@@ -55,8 +58,8 @@ DATA_SOURCES_LIST <- list(
     asset_urls = jsonlite::toJSON(c("https://spatial-water-noaa.s3.amazonaws.com/surface/nws-ehydro/conus/epydro_BW_03_OLV_20170207_CS_OLD_LOCK_10_AND_11_BAR_sounding_points.tif"))
   ),
   list(
-    domain = "puerto-rico",
-    region = "puerto-rico",
+    domain = "puerto-rico-virgin-islands",
+    region = "puerto-rico-virgin-islands",
     source = "nws-ehydro",
     resolution = "",
     has_topo = "False",
@@ -195,8 +198,8 @@ DATA_SOURCES_LIST <- list(
     asset_urls = jsonlite::toJSON(c("https://spatial-water-noaa.s3.amazonaws.com/surface/nws-topobathy/hawaii/tbdem_hawaii_30m.tif"))
   ),
   list(
-    domain = "pr-usvi",
-    region = "pr-usvi",
+    domain = "puerto-rico-virgin-islands",
+    region = "puerto-rico-virgin-islands",
     source = "nws-topobathy",
     resolution = "30m",
     has_topo = "False",
