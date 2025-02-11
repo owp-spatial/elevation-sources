@@ -7,10 +7,12 @@ library(usethis)
 catalog_table <- read.csv("./inst/extdata/surface_catalog_table.csv")
 
 # -------------------------------------------------------------------------------------------------
-
 # ----- Add additional list elements to DATA_SOURCES_LIST to add entries to the catalog -----
 # - 3DEP 10m DEM
 # - 3DEP 30m DEM
+# - ehydro
+# - nos surveys
+# - topobathy
 # -------------------------------------------------------------------------------------------------
 DATA_SOURCES_LIST <- list(
   list(
