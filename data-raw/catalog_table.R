@@ -1,5 +1,6 @@
 library(jsonlite)
 library(usethis)
+# library(dplyr)
 
 ## code to prepare `catalog_table` dataset goes here
 

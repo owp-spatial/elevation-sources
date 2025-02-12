@@ -1,6 +1,6 @@
 Package: elevationSources
 Title: Surface Elevation Sources Data R Package 
-Version: 0.0.0.51
+Version: 0.0.0.52
 Authors@R: c(person("Angus", "Watters",  role = c("aut", "cre"), email = "anguswatters@gmail.com"),
              person("Liliana", "Hernandez Gonzalez",  role = "ctb"),
              person("NOAA", role = "fnd"),
