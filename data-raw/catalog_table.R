@@ -69,8 +69,22 @@ DATA_SOURCES_LIST <- list(
     vertical_datum = "",
     vertical_datum_conversion = "",
     priority = 1,
-    source_url = "https://spatial-water-noaa.s3.amazonaws.com/surface/nws-ehydro/conus/epydro_BW_03_OLV_20170207_CS_OLD_LOCK_10_AND_11_BAR_sounding_points.tif",
-    asset_urls = jsonlite::toJSON(c("https://spatial-water-noaa.s3.amazonaws.com/surface/nws-ehydro/conus/epydro_BW_03_OLV_20170207_CS_OLD_LOCK_10_AND_11_BAR_sounding_points.tif"))
+    source_url = "https://spatial-water-noaa.s3.amazonaws.com/surface/nws-ehydro/puerto-rico-virgin-islands/AH_01_ARE_20111106_CS_2012_020.tif",
+    asset_urls = jsonlite::toJSON(c("https://spatial-water-noaa.s3.amazonaws.com/surface/nws-ehydro/puerto-rico-virgin-islands/AH_01_ARE_20111106_CS_2012_020.tif"))
+  ),
+  list(
+    domain = "puerto-rico-virgin-islands",
+    region = "puerto-rico-virgin-islands",
+    source = "nws-ehydro",
+    resolution = "",
+    has_topo = "False",
+    has_bathymetry = "False",
+    horizontal_crs = "",
+    vertical_datum = "",
+    vertical_datum_conversion = "",
+    priority = 1,
+    source_url = "https://spatial-water-noaa.s3.amazonaws.com/surface/nws-ehydro/puerto-rico-virgin-islands/AH_01_ARE_20130420_CS_2013_042.tif",
+    asset_urls = jsonlite::toJSON(c("https://spatial-water-noaa.s3.amazonaws.com/surface/nws-ehydro/puerto-rico-virgin-islands/AH_01_ARE_20130420_CS_2013_042.tif"))
   ),
   list(
     domain = "albemarle-sound",
@@ -125,8 +139,8 @@ DATA_SOURCES_LIST <- list(
     vertical_datum = "",
     vertical_datum_conversion = "",
     priority = 1,
-    source_url = "",
-    asset_urls = jsonlite::toJSON(c(""))
+    source_url = "https://spatial-water-noaa.s3.amazonaws.com/surface/nws-nos-surveys/tangier-sound/Tangier_Sound_NOS_NCEI-002.tif",
+    asset_urls = jsonlite::toJSON(c("https://spatial-water-noaa.s3.amazonaws.com/surface/nws-nos-surveys/tangier-sound/Tangier_Sound_NOS_NCEI-002.tif"))
   ),
   list(
     domain = "alaska",
@@ -181,8 +195,8 @@ DATA_SOURCES_LIST <- list(
     vertical_datum = "",
     vertical_datum_conversion = "",
     priority = 1,
-    source_url = "",
-    asset_urls = jsonlite::toJSON(c(""))
+    source_url = "https://spatial-water-noaa.s3.amazonaws.com/surface/nws-topobathy/great-lakes/tbdem_great_lakes_30m.tif",
+    asset_urls = jsonlite::toJSON(c("https://spatial-water-noaa.s3.amazonaws.com/surface/nws-topobathy/great-lakes/tbdem_great_lakes_30m.tif"))
   ),
   list(
     domain = "hawaii",

@@ -5,7 +5,7 @@
 \alias{catalog_table}
 \title{Surface Elevation Catalog}
 \format{
-An object of class \code{data.frame} with 99 rows and 12 columns.
+An object of class \code{data.frame} with 100 rows and 12 columns.
 }
 \source{
 OWP Spatial
