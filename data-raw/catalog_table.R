@@ -225,7 +225,19 @@ DATA_SOURCES_LIST <- list(
     priority = 1,
     source_url = "https://spatial-water-noaa.s3.amazonaws.com/surface/nws-topobathy/puerto-rico-virgin-islands/tbdem_pr_usvi_30m.tif",
     asset_urls = jsonlite::toJSON(c("https://spatial-water-noaa.s3.amazonaws.com/surface/nws-topobathy/puerto-rico-virgin-islands/tbdem_pr_usvi_30m.tif"))
-  )
+  ),
+  list(domain = "alaska",
+    region = "alaska",
+    source = "usgs_insar",
+    resolution = "5m",
+    has_topo = "True",
+    has_bathymetry = "False",
+    horizontal_crs = "",
+    vertical_datum = "NAVD88",
+    vertical_datum_conversion = "",
+    priority = 1,
+    source_url = "https://www.usgs.gov/ngp-user-engagement-office/alaska-mapping-initiative",
+    asset_urls = jsonlite::toJSON(c("https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/2/TIFF/USGS_Seamless_DEM_2.vrt"))) 
 )
 
 # Add DATA_SOURCES_LIST rows to rest of catalog
