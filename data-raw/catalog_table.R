@@ -237,9 +237,9 @@ DATA_SOURCES_LIST <- list(
     vertical_datum_conversion = "",
     priority = 1,
     source_url = "https://www.usgs.gov/ngp-user-engagement-office/alaska-mapping-initiative",
-    asset_urls = jsonlite::toJSON(c("https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/2/TIFF/USGS_Seamless_DEM_2.vrt"))) 
+    asset_urls = jsonlite::toJSON(c("https://prd-tnm.s3.amazonaws.com/StagedProducts/Elevation/2/TIFF/USGS_Seamless_DEM_2.vrt")) 
+  )
 )
-
 # Add DATA_SOURCES_LIST rows to rest of catalog
 DATA_SOURCES <- do.call(rbind, lapply(DATA_SOURCES_LIST, as.data.frame))
 catalog_table <- rbind(catalog_table, DATA_SOURCES)
